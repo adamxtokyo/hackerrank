@@ -4,4 +4,4 @@
  * https://www.hackerrank.com/challenges/simple-array-sum/problem
  */
 
-const simpleArraySum = ar => ar.reduce( (acc, val) => acc += val, 0)
+const simpleArraySum = arr => arr.reduce( (acc, val) => acc += val, 0)
