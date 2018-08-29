@@ -9,5 +9,10 @@
   "author": "Adam Grawender",
   "license": "MIT",
   "private": true,
-  "homepage": "https://github.com/adamxtokyo/hackerrank#readme"
+  "homepage": "https://github.com/adamxtokyo/hackerrank#readme",
+  "dependencies": {
+    "bignumber.js": "^4.0.0",
+    "lodash": "^4.17.10",
+    "underscore": "^1.8.3"
+  }
 }
