@@ -10,5 +10,5 @@ function appendAndDelete (s, t, k) {
     for (let i = 0, l = Math.min(s.length, t.length); i < l; i++, o -= 2) {
         if (s[i] !== t[i]) break
     }
-    return k - o < 0 || (k - o) % 2 !== 0 ? 'No' : 'Yes'
+    return o > k || (k - o) % 2 !== 0 ? 'No' : 'Yes'
 }
