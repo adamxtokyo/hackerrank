@@ -4,7 +4,7 @@
   "description": "My HackerRank solutions",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adamxtokyo/hackerrank.git"
+    "url": "https://github.com/adamxtokyo/hackerrank.git"
   },
   "author": "Adam Grawender",
   "license": "MIT",
