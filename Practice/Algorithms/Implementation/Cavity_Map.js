@@ -5,6 +5,7 @@
  */
 
 function cavityMap (g) {
+
     let c = g.slice()
 
     for (let y = 1, ly = g.length-1; y < ly; y++) {
