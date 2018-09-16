@@ -11,6 +11,6 @@
   "private": true,
   "homepage": "https://github.com/adamxtokyo/hackerrank#readme",
   "dependencies": {
-    "bignumber.js": "~4.0.0"
+    "bignumber.js": "^7.0.0"
   }
 }
