@@ -1,7 +1,7 @@
 
 /*
  * Practice > Algorithms > Bit Manipulation > Maximizing XOR
- * https://www.hackerrank.com/challenges/lonely-integer/problem
+ * https://www.hackerrank.com/challenges/maximizing-xor/problem
  */
 
 function maximizingXor (l, r) {
