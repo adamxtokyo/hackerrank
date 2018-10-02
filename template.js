@@ -18,7 +18,7 @@ process.stdin.on('end', () => {
     let input =  input_stdin.split('\n')
 
     let n = Number(input[0])
-    let arr = input[1].split(' ').map(x => Number(x))
+    let arr = input[1].split(' ').map(Number)
 
     process.stdout.write(solution(n, arr) + '\n')
 })
