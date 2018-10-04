@@ -5,11 +5,14 @@
  */
 
 function checkMagazine (magazine, note) {
-    let map = new Map()
-    magazine.forEach(word => map.set(word, (map.get(word) || 0) + 1))
+
+    let word_map = new Map()
+    magazine.forEach(word => word_map.set(word, (word_map.get(word) || 0) + 1))
+
     for (let i = 0, l = note.length; i < l; i++) {
-        if (!(map.get(note[i]) > 0)) return 'No'
-        map.set(note[i], map.get(note[i]) - 1)
+        let words = word_map.get(note[i])
+        if (!words) return 'No'
+        word_map.set(note[i], words - 1)
     }
     return 'Yes'
 }
