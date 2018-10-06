@@ -4,6 +4,23 @@
  * https://www.hackerrank.com/challenges/greedy-florist/problem
  */
 
+'use strict'
+
+process.stdin.resume()
+process.stdin.setEncoding('ascii')
+
+let input_stdin = ''
+
+process.stdin.on('data', data => input_stdin += data)
+process.stdin.on('end', () => {
+    let input =  input_stdin.split('\n')
+    let [n, k] = input[0].split(' ').map(Number)
+    let c = input[1].split(' ').map(Number)
+    process.stdout.write(getMinimumCost(k, c) + '\n')
+})
+
+// --- SOLUTION BELOW --- //
+
 function getMinimumCost (k, c) {
 
     // Create a 2D array holding purchase order for each friend
