@@ -4,6 +4,19 @@
  * https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem
  */
 
+'use strict'
+
+process.stdin.resume()
+process.stdin.setEncoding('ascii')
+
+let input_stdin = ''
+
+process.stdin.on('data', data => input_stdin += data)
+process.stdin.on('end', () => process.stdout.write(isValid(input_stdin))
+)
+
+// --- SOLUTION BELOW --- //
+
 function isValid (s) {
 
     // Create frequency index
