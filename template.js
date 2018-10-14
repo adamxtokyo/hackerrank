@@ -6,7 +6,7 @@
 
 'use strict'
 
-const bn = require('bignumber.js')
+const BigNumber = require('bignumber.js')
 
 process.stdin.resume()
 process.stdin.setEncoding('ascii')
@@ -20,7 +20,8 @@ process.stdin.on('end', () => {
     let n = Number(input[0])
     let arr = input[1].split(' ').map(Number)
 
-    process.stdout.write(solution(n, arr) + '\n')
+    let result = solution(n, arr)
+    process.stdout.write(result)
 })
 
 // --- SOLUTION BELOW --- //
