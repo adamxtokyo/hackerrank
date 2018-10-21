@@ -17,3 +17,23 @@ HackerRank has language specific environments with additional libraries availabl
 The environment data above was provided by HackerRank. You can see their full list [here](https://www.hackerrank.com/environment).  
 
 *\* The only library I use is __bignumber.js__, since pretty much everything else can be done natively with ES6+ syntax. However, I've noticed the version used on HackerRank is different from the one listed (it's impossible to see the exact version they use). I currently use version \^7.0.0 in my local testing environment.*
+
+
+## Run scripts
+
+### Linting
+
+```bash
+$ npm run lint
+```
+
+Run ESLint on all JavaScript files in the repo.  
+
+[Airbnb's style guide](https://github.com/airbnb/javascript) is used as the base ruleset, but with a few modifications:  
+
+* 4 spaces indentation
+* It's OK to call functions before declaration
+* No semicolons (except before ambiguous statements)
+* Whitespace between the function keyword/name and the opening parenthesis
+
+Linting rules can be found in the [ESLint config file](https://github.com/adamxtokyo/hackerrank/blob/master/.eslintrc.json).

@@ -10,7 +10,15 @@
   "license": "MIT",
   "private": true,
   "homepage": "https://github.com/adamxtokyo/hackerrank#readme",
+  "scripts": {
+    "lint": "npx eslint ."
+  },
   "dependencies": {
     "bignumber.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }
