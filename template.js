@@ -4,27 +4,29 @@
  * URL (e.g. https://www.hackerrank.com/challenges/string-problem-1/problem)
  */
 
-'use strict'
-
-const BigNumber = require('bignumber.js')
+// const BigNumber = require('bignumber.js')
 
 process.stdin.resume()
 process.stdin.setEncoding('ascii')
 
-let input_stdin = ''
+let stdin = ''
 
-process.stdin.on('data', data => input_stdin += data)
+process.stdin.on('data', (data) => {
+    stdin += data
+})
+
 process.stdin.on('end', () => {
-    let input =  input_stdin.split('\n')
+    const input = stdin.split('\n')
 
-    let n = Number(input[0])
-    let arr = input[1].split(' ').map(Number)
+    const n = Number(input[0])
+    const arr = input.slice(1, n + 1)
 
-    let result = solution(n, arr)
+    const result = solution(n, arr)
     process.stdout.write(result)
 })
 
 // --- SOLUTION BELOW --- //
 
 function solution (n, arr) {
+    return { n, arr }
 }
