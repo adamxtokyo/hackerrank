@@ -27,9 +27,9 @@ The environment data above was provided by HackerRank. You can see their full li
 $ npm run lint
 ```
 
-Run ESLint on all JavaScript files in the repo.  
+Run [ESLint](https://eslint.org/) on all JavaScript files in the repo.  
 
-[Airbnb's style guide](https://github.com/airbnb/javascript) is used as the base ruleset, but with a few modifications:  
+[Airbnb's style guide](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-) is used as the base ruleset, but with a few modifications:  
 
 * 4 spaces indentation
 * It's OK to call functions before declaration
