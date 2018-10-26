@@ -4,21 +4,22 @@
  * https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude/problem
  */
 
-'use strict'
-
 process.stdin.resume()
 process.stdin.setEncoding('ascii')
 
-let input_stdin = ''
+let stdin = ''
 
-process.stdin.on('data', data => input_stdin += data)
+process.stdin.on('data', (data) => {
+    stdin += data
+})
+
 process.stdin.on('end', () => {
-    const input =  input_stdin.split('\n')
+    const input = stdin.split('\n')
 
     const n = Number(input[0])
-    const coordinates = input.slice(1, 1+n)
+    const coordinates = input.slice(1, 1 + n)
 
-    coordinates.forEach(c => process.stdout.write(areValidCoordinates(c) + '\n'))
+    coordinates.forEach(c => process.stdout.write(`${areValidCoordinates(c)}\n`))
 })
 
 // --- SOLUTION BELOW --- //
