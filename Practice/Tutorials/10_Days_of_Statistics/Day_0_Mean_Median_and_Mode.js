@@ -20,7 +20,7 @@ process.stdin.on('end', () => {
     const arr = input[1].split(' ').map(Number)
 
     const result = calcMeanMedianMode(arr, n)
-    process.stdout.write(result.join('\n'))
+    process.stdout.write(result.map(x => x.toFixed(1)).join('\n'))
 })
 
 // --- SOLUTION BELOW --- //
@@ -37,5 +37,5 @@ function calcMeanMedianMode (arr, n = arr.length) {
     const median = (arr[Math.floor(n / 2)] + arr[Math.ceil((n / 2) - 1)]) / 2
     const mode = [...count.entries()].reduce((acc, val) => (val[1] > acc[1] ? val : acc), [0, 0])[0]
 
-    return [mean.toFixed(1), median.toFixed(1), mode.toFixed(1)]
+    return [mean, median, mode]
 }
