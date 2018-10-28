@@ -20,13 +20,11 @@ process.stdin.on('end', () => {
     const w = input[2].split(' ').map(Number)
 
     const result = calcWeightedMean(x, w)
-    process.stdout.write(result)
+    process.stdout.write(result.toFixed(1))
 })
 
 // --- SOLUTION BELOW --- //
 
 function calcWeightedMean (x, w) {
-    return (
-        x.reduce((acc, val, id) => acc + val * w[id], 0) / w.reduce((acc, val) => acc + val, 0)
-    ).toFixed(1)
+    return x.reduce((acc, val, id) => acc + val * w[id], 0) / w.reduce((acc, val) => acc + val, 0)
 }
