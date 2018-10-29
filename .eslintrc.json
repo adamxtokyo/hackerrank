@@ -3,6 +3,7 @@
     "rules": {
         "indent": ["error", 4],
         "no-use-before-define": ["error", { "functions": false }],
+        "no-unused-vars": ["warn"],
         "semi": ["error", "never"],
         "space-before-function-paren": ["error", "always"]
     }
