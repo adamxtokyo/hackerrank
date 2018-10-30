@@ -18,8 +18,10 @@ process.stdin.on('end', () => {
     const q = d / 100
     const p = 1 - q
 
-    process.stdout.write(cumulativeProbability(n - 2, n, p).toFixed(3) + '\n')
-    process.stdout.write(cumulativeProbability(2, n, q).toFixed(3) + '\n')
+    const answer1 = cumulativeProbability(n - 2, n, p).toFixed(3)
+    const answer2 = cumulativeProbability(2, n, q).toFixed(3)
+
+    process.stdout.write(`${answer1}\n${answer2}`)
 })
 
 // --- SOLUTION BELOW --- //
