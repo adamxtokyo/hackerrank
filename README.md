@@ -1,9 +1,9 @@
 # HackerRank problem solutions 🤖
 
-__These are most of my HackerRank problem solutions.__
+__These are *most* of my HackerRank problem solutions.__
 
 I decided to upload them to GitHub for future reference/archiving.  
-I use HackerRank as a tool to practice, learn and improve as a coder.  
+I use HackerRank as one of many tools to practice, learn and improve as a coder.  
 Be kind when looking at my code - remember it's a process 😌
 
 ## Environment
