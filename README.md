@@ -29,11 +29,5 @@ $ npm run lint
 
 Run [ESLint](https://eslint.org/) on all JavaScript files in the repo.  
 
-[Airbnb's style guide](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-) is used as the base ruleset, but with a few modifications:  
-
-* 4 spaces indentation
-* It's OK to call functions before declaration
-* No semicolons (except before ambiguous statements)
-* Whitespace between the function keyword/name and the opening parenthesis
-
-Linting rules can be found in the [ESLint config file](https://github.com/adamxtokyo/hackerrank/blob/master/.eslintrc.json).
+[Airbnb's style guide](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-) is used as the base ruleset, but with a few modifications.  
+Detailed linting rules can be found in the [ESLint config file](https://github.com/adamxtokyo/hackerrank/blob/master/.eslintrc.json).
